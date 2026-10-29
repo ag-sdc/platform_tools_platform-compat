@@ -19,33 +19,16 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
-python_binary_host {
-    name: "process-compat-config",
-    main: "process_compat_config.py",
-    srcs: ["process_compat_config.py"],
-    version: {
-        py3: {
-            embedded_launcher: true,
-        },
-    },
-}
+// Replaced by prebuilts_host_tools (bin/process-compat-config)
+// python_binary_host {
+//     name: "process-compat-config",
+//     ...
+// }
 
-python_test_host {
-    name: "process-compat-config-test",
-    main: "process-compat-config-test.py",
-    srcs: [
-        "process_compat_config.py",
-        "process-compat-config-test.py",
-    ],
-    version: {
-        py3: {
-            embedded_launcher: true,
-        },
-    },
-    test_options: {
-        unit_test: true,
-    },
-}
+// python_test_host {
+//     name: "process-compat-config-test",
+//     ...
+// }
 
 global_compat_config {
     name: "global-compat-config",

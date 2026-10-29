@@ -31,10 +31,8 @@ java_library_host {
     ],
 }
 
-java_binary_host {
-    name: "class2nonsdklist",
-    manifest: "class2nonsdklist.mf",
-    static_libs: [
-        "class2nonsdklistlib",
-    ],
-}
+// Replaced by prebuilts_host_tools (bin/class2nonsdklist)
+// java_binary_host {
+//     name: "class2nonsdklist",
+//     ...
+// }
